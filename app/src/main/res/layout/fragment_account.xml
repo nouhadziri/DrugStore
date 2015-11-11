@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <TextView
+        android:id = "@+id/info_perso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff5588"
+        android:text="Informations personnelles"
+        android:layout_margin="16dp"
+
+        />
+    <ImageView
+        android:id = "@+id/image_account"
+        android:layout_width="107dp"
+        android:layout_height="104dp"
+        android:src="@drawable/changephoto"
+        android:layout_below="@+id/info_perso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/image_account"
+        android:hint="@string/add_name_hint"
+        android:layout_alignTop="@+id/image_account"
+        android:layout_alignRight="@+id/info_perso"
+        android:layout_alignEnd="@+id/info_perso" />
+
+
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NOM"
+        android:layout_alignBottom="@+id/image_account"
+        android:layout_alignLeft="@+id/Name"
+        android:layout_alignStart="@+id/Name"
+        android:layout_alignRight="@+id/Name"
+        android:layout_alignEnd="@+id/Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/Phone"
+        android:hint="Numero de telephone"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/image_account"
+        android:layout_alignLeft="@+id/info_perso"
+        android:layout_alignStart="@+id/info_perso"
+        android:layout_alignRight="@+id/Name"
+        android:layout_alignEnd="@+id/Name" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="80dp"
+        android:hint="Adresse Email"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/image_account"
+        android:layout_alignLeft="@+id/info_perso"
+        android:layout_alignStart="@+id/info_perso"
+        android:layout_alignRight="@+id/Name"
+        android:layout_alignEnd="@+id/Name" />
+
+
+    <EditText
+        android:id="@+id/DateNaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:hint="date de naissance"
+        android:layout_below="@+id/image_account"
+        android:layout_alignLeft="@+id/info_perso"
+        android:layout_alignStart="@+id/info_perso"
+        android:layout_alignRight="@+id/Name"
+        android:layout_alignEnd="@+id/Name"/>
+    <EditText
+        android:id="@+id/Sexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:hint="Sexe"
+        android:layout_below="@+id/image_account"
+        android:layout_alignLeft="@+id/info_perso"
+        android:layout_alignStart="@+id/info_perso"
+        android:layout_alignRight="@+id/Name"
+        android:layout_alignEnd="@+id/Name"/>
+    <Button
+        android:id="@+id/save_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_below="@+id/Sexe"
+        android:layout_centerHorizontal="true"></Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_dialog_spinner_items">
+        <item>Sexe</item>
+        <item>Masculin</item>
+        <item>feminin</item>
+
+
+
+
+    </string-array>
+
+
+
+</resources>

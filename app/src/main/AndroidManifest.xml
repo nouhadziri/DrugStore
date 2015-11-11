@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nouha.mapharmacie" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/drugstore"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.nouha.mapharmacie.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.nouha.mapharmacie.AccountActivity"
+            android:label="@string/title_activity_account"
+            android:parentActivityName="com.example.nouha.mapharmacie.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nouha.mapharmacie.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.nouha.mapharmacie.PharmacyActivity"
+            android:label="@string/title_activity_pharmacy"
+            android:parentActivityName="com.example.nouha.mapharmacie.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nouha.mapharmacie.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.nouha.mapharmacie.AffichageAccount"
+            android:label="@string/title_activity_affichage_account"
+            android:parentActivityName="com.example.nouha.mapharmacie.AccountActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nouha.mapharmacie.AccountActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.example.nouha.mapharmacie.MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+        <activity
+            android:name="com.example.nouha.mapharmacie.SendEmail"
+            android:label="@string/title_activity_send_email" >
+        </activity>
+        <activity
+            android:name="com.example.nouha.mapharmacie.PhotoIntentActivity"
+            android:label="@string/title_activity_photo_intent"
+            android:parentActivityName="com.example.nouha.mapharmacie.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nouha.mapharmacie.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.nouha.mapharmacie.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="recyclerview.FeedListActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+
+    </application>
+
+</manifest>

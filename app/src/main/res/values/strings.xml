@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MaPharmacie</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyBbZN6m4ww1hXN-BReGBAD_Z3JotfPEjrc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_count">MON COMPTE</string>
+    <string name="add_help">MES DEMANDES DE CONSEILS</string>
+    <string name="add_prescription">MES PHOTOS DORDONNANCE</string>
+    <string name="add_treatement">MES TRAITEMENTS</string>
+    <string name="add_pharmacy">MES PHARMACIES</string>
+    <string name="add_name_hint">Prenom</string>
+    <string name="add_info">Informations personnelles</string>
+    <string name="add_last_name_hint">NOM</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="action_dialog">Date de naissance</string>
+    <string name="title_activity_pharmacy">PharmacyActivity</string>
+    <string name="title_activity_affichage_account">AffichageAccount</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_send_email">SendEmail</string>
+    <string name="title_activity_photo_intent">PhotoIntentActivity</string>
+    <string name="album_name">CameraSample</string>
+    <string name="cannot">Cannot</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+</resources>
